@@ -1,0 +1,11 @@
+-----START SIGNING BITCOIN ADDRESS-----
+1CoiNMixqJdctqazGsTvDcAygqHPUvmRo8
+-----END SIGNING BITCOIN ADDRESS-----
+
+-----START LETTER OF GUARANTEE-----
+We hereby confirm that WWW.COINMIXER.IO has generated the address 1FQirhgMjus8afncKHg8GWWgfQcfoutfbE in order to transfer incoming amount (minus fee) to the following addresses: 100% to 1CoiNMixqJdctqazGsTvDcAygqHPUvmRo8 after 0 hours. This service will be only available for all bitcoins received from 2021 July 01, 08:14:31 UTC to 2021 July 02, 08:14:31 UTC with minimum amount of 0.001 BTC per single transaction and maximum amount of 145.82 BTC total. Our fee is 2.7687% + 0.0005 BTC for every target address. This letter is digitally signed by our main account: 1CoiNMixqJdctqazGsTvDcAygqHPUvmRo8. Stay protected and thank you for using our service.
+-----END LETTER OF GUARANTEE-----
+
+-----START DIGITAL SIGNATURE-----
+G2Qgg6fNT+SLIS2wCF4iXF5uSePIqSOfRsJFU+MCfCTZSZOth9dRgsJaIlYfNha0i/Q0Rx7EDFvs0d5JVI9LjfA=
+-----END DIGITAL SIGNATURE-----
