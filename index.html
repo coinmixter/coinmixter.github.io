@@ -1,0 +1,3506 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>Bitcoin Mixer — Bitcoin Tumbler — Bitcoin Blender — CoinMixer</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=480, user-scalable=no">
+  <link href="public/assets/styles/buildc4cac4ca%EF%B9%961.css" rel="stylesheet"/>
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
+  <meta name="csrf-token" content="XL8TaIDtIkVcLRUoOVFm2xj5cg8q5b93MzzuFSBR" />
+  <meta name="description" content="CoinMixer.io — best bitcoin mixing service! Mix your bitcoin fast and secure!"/>
+</head>
+<body ng-controller="maintanance">
+<div class="wrapper" ng-hide="maintanance">
+  <div class="section-row">
+    <nav class="navbar navbar-default">
+      <div class="row ">
+        <div class="col-md-5">
+          <h4 class="header-quest">
+            <a href="fees.html">How does it work? </a>
+          </h4>
+        </div>
+        <div class="col-md-2 logo">
+          <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"><span class="green">Coin</span><span>Mixer</span></a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item__howitworks">
+                <a href="how.html">How does it work</a>
+              </li>
+              <li class="nav-item__why">
+                <a href="why.html">Why should I mix my coins</a>
+              </li>
+              <li>
+                <a href="fees.html">Fees</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="mailto:coinmix2021@protonmail.com">Contacts</a>
+              </li>
+                          </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="section-row section-row__expanded">
+  
+  <section id="content" class="content">
+    <div class="container" ng-controller="mixer">
+      
+      <div class="intro" ng-hide="inited">
+        <div class="intro">
+         
+          <div class="row">
+            <div class="col-md-12 intro-header">
+              <h1 class="text-center">
+                High volume Bitcoin mixer
+              </h1>
+              <h2 class="text-center">Securing your coins since 2016 <a href="https://bitcointalk.org/index.php?topic=1484009.0" target="_blank">[ANN]</a></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="intro-picture">
+                <img src="public/assets/images/index2.png" class="img-responsive" alt="best bitcoin tumbler" width="504px"/>
+              </div>
+            </div>
+            <div class="col-md-6 intro-why">
+              <h3 style="text-transform: uppercase">
+                Securing your coins since 2016 <a href="https://bitcointalk.org/index.php?topic=1484009.0" target="_blank">[ANN]</a>
+              </h3>
+              <p>
+                CoinMixer.io was built from ground up with inputs from the <a href="https://bitcointalk.org/index.php?topic=1484009.0" target="_blank">Bitcoin community</a>.
+                We understand our operation runs on trust and protect our reputation with the highest efforts.
+                We produce a “Letter of Guarantee” for every transaction within the system.
+                Our support is ready to be at your service round the clock.
+                We are on a mission to make transactions safer and untraceable while contributing towards privacy over internet transactions.
+              </p>
+              <p>
+                <a href="why.html">Why should I mix my coins?</a>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <button class="button" ng-click="init()">Start</button>
+            </div>
+          </div>
+        
+          <div class="row seo seo_m55">
+            <div class="col-md-12">
+              <h2 class="seo__header">Warrant Canary</h2>
+              <p>We confirm that we take full control of our infrastructure. It has never been compromised or suffered a data breach. We have not disclosed any information of our users, and we have not been forced to modify our system to allow access or data leakage to a third party of any kind.</p>
+              <h3 style="font-weight: normal">As of <span ng-bind="currentDate |  date:'MMMM dd, yyyy'"></span> we state the following:</h3>
+              <ul>
+                <li>We have NOT received any National Security letters;</li>
+                <li>We have NOT received any gag orders;</li>
+                <li>We have NOT received any warrants from any government organization.</li>
+              </ul>
+              <p>We are 100% committed to our zero-logs policy — we never log the activities of our users to ensure their ultimate privacy and security.</p>
+            </div>
+          </div>
+        
+          <div class="row seo">
+        
+            <div class="col-md-12">
+              <h2 class="seo__header">Keep your funds untraceable with the reliable
+                Bitcoin mixer</h2>
+              <p>Since the dawn of the digital age, millions of users have made a switch to Blockchain that is claimed to change the way we pay for goods and conduct transactions. No wonder it is a game-changing technology that makes a difference and brings complete privacy. But what you might not know is that Blockchain records all transactions in its publicly available ledger, meaning that third parties can trace them should the need arise. If it’s not that level of confidentiality you’ve expected, be sure to take advantage of our coin mixer.</p>
+              <p>CoinMixer is a Bitcoin mixing service (also known as a tumbler or blender) that is centered around the idea of making your digital assets hidden from the public eye for good. As the name implies, it works by mixing your coins with those in our cryptocurrency reserves to ensure private transactions without a trace. CoinMixer helps you make your BTCs unidentifiable and, thus, allows you to rest easy knowing that neither crypto-hackers nor security agencies can keep track of your financial activities.</p>
+              <h3>Why our Bitcoin tumbler stands out from the rest</h3>
+              <p>What forms the pillar of CoinMixer is that it has been designed with the needs of Bitcoin community members in mind. It is your privacy and security that underpin our mixing service and encourage us to turn all decentralized opportunities to your advantage. That is why we’ve done our utmost to incorporate the following features into our Bitcoin blender:</p>
+              <strong><img src="public/assets/styles/img/icons/success2.svg" alt=""> The highest level of protection</strong>
+              <p>Our servers use advanced encryption methods to ensure the integrity of all data stored and minimize the risk of the Blockchain analysis. What is more, we provide every user with a unique code to prevent mixing their coins with the ones they’ve sent to us before. Apart from that, we regularly delete all details of your transactions, including incoming Bitcoin addresses.</p>
+              <strong><img src="public/assets/styles/img/icons/success2.svg" alt=""> Impressive mixing capabilities</strong>
+              <p>Whether you’re looking to mix 0.001 BTC or several hundreds of coins, you won’t find a more convenient service than our Bitcoin tumbler. CoinMixer has over 2000 BTC in its cryptocurrency reserves, which allows you to exchange large amounts of BTC without waiting for other users to send their coins for mixing.</p>
+              <strong><img src="public/assets/styles/img/icons/success2.svg" alt=""> Low fees and the Letter of Guarantee</strong>
+              <p>While other Bitcoin mixing services charge 1% and more for each transaction, CoinMixer helps you avoid overspending. Our fees start only at 0.5% + 0.0005 BTC and can be customized to make it impossible for third parties to spot the connection between addresses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mixer" ng-show="inited" ng-class="{__processing: operation.state == 'processing'}" ng-cloak>
+
+        <div class="setup" ng-show="operation.state != 'ready'">
+          <form name="addresses" id="addressform" method="POST" action="post.html">
+            <input type="hidden" name="_token" value="XL8TaIDtIkVcLRUoOVFm2xj5cg8q5b93MzzuFSBR">          <div class="row">
+            <div class="col-md-12 enter-code-wrapper">
+              <div class="enter-code">
+                <input class="input" placeholder="Enter CoinMixer code" name="coinmixer_code" type="text" value=""/>
+                <span class="quest" tooltip-placement="bottom" uib-tooltip-template="'bitcodeTooltipText'">?</span>
+                <script type="text/ng-template" id="bitcodeTooltipText">
+                  <span>{{ (bitcode ? 'Your CoinMixer code.' : 'You will receive a CoinMixer code after your first order.') }} This code ensures that your previous transactions will never be mixed with new ones.<br/><br/> It also gives you discount on service commission. See Fees for details.</span>
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 bitchain">
+              <div class="addresses">
+                <div class="stepped">
+                  <p>Please enter bitcoin forward to address: </p>
+                  <div class="step">1</div>
+                </div>
+                
+                  <div class="code-group" ng-repeat="item in items">
+                    <a href="#" class="remove" ng-show="$index > 0" ng-click="remove(item, $event)"></a><input class="input removable" type="text" name="input[]address" ng-model="item.address" ng-style="{'border-color': items.length > 1 ? colors[$index] : ''}" required valid-address no-duplicates/>
+                    <div class="percent" ng-show="items.length > 1" ng-class="{small: delay}"><span class="value" id="percentage"> <input type="hidden" name="input[]percentage" value="{{item.percent.toFixed(2)}}%"> {{item.percent.toFixed(2)}}%</span></div>
+                    <div class="delay" ng-show="delay" ng-class="{small: items.length > 1}"><span class="value" id="delay"> <input type="hidden" name="input[]delay" value="{{getItemDelay(item)}}"> {{getItemDelay(item)}}</span></div>
+                  </div>
+        
+                  <a class="settime" href="#" ng-click="toogleDelay($event)">{{delay ? 'Remove delay' : 'Set delay'}}</a>
+                  <a class="bitchain_add" href="#" ng-click="add($event)" ng-hide="items.length >= 10">Add address</a>
+                
+              </div>
+        
+              <div class="timedelay" ng-show="delay">
+                <p>
+                  Time delay
+                </p>
+                <div class="delay-slider"></div>
+              </div>
+              <div class="percentage" ng-show="items.length > 1">
+                <p>
+                  Percentage distribution
+                </p>
+                <div class="percentage-slider"></div>
+              </div>
+              <div class="fee">
+                <p>
+                  Service fee:&nbsp;<span class="percents" id="service_fee">{{getFee()}}%</span> - <span class="discount" ng-class="{highlight: discountChanged}">{{getDiscount()}}%</span> (<a href="fees.html" target="_blank">discount</a>) <span class="quest-hint" uib-tooltip-template="'feeTooltipText'">?</span>
+                  <input type="hidden" name="service_fee_input" id="service_fee_input">
+                </p>
+                <script type="text/ng-template" id="feeTooltipText">
+                  <span>It is very important to set custom service fee to prevent amount-based blockchain analysis. See FAQ for details.<br/><br/> If you use CoinMixer often, you get the discount on the service commission fee. See Fees for details.</span>
+                </script>
+                <div class="fee-slider"></div>
+                <div class="security-level">
+                  <div class="security-level__header" ng-class="{highlight2: isLegacy}" ng-click="isOpenLevesl = !isOpenLevesl">
+                    <div class="security-level__label">Security level:</div>
+                    <div class="security-level__value" id="security_level" ng-class="{
+                    'security-level__value_open': isOpenLevesl,
+                    'security-level__value_gold': tariff == 'Gold',
+                    'security-level__value_silver': tariff == 'Silver'
+                    }">{{tariff}}</div>
+                    <input type="hidden" name="security_level_input" id="security_level_input">
+                  </div>
+        
+                  <div ng-if="isOpenLevesl">
+                    <div class="security-level__description" ng-show="tariff == 'Standard'">
+                      <div class="security-level__item">Fast payouts confirmation</div>
+                      <div class="security-level__item security-level__item_checked">Up to 24 hours of configurable delays</div>
+                      <div class="security-level__item security-level__item_checked">Up to 2 output addresses</div>
+                    </div>
+        
+                    <div class="security-level__description" ng-show="tariff == 'Silver'">
+                      <div class="security-level__item security-level__item_checked">Fast payouts confirmation</div>
+                      <div class="security-level__item security-level__item_checked">Up to 48 hours of configurable delays</div>
+                      <div class="security-level__item security-level__item_checked">Up to 5 output addresses</div>
+                    </div>
+        
+                    <div class="security-level__description" ng-show="tariff == 'Premium'">
+                      <div class="security-level__item security-level__item_checked">Premium plan for old valuable clients *</div>
+                      <div class="security-level__item security-level__item_checked">Up to 48 hours of configurable delays</div>
+                      <div class="security-level__item security-level__item_checked">Up to 5 output addresses</div>
+                      <div class="security-level__item security-level__item_hint">* Plan is valid till Jan 31, 2019</div>
+                    </div>
+        
+        
+                    <div class="security-level__description" ng-show="tariff == 'Gold'">
+                      <div class="security-level__item security-level__item_checked">​Fast payouts confirmation</div>
+                      <div class="security-level__item security-level__item_checked">Up to 96 hours of configurable delays</div>
+                      <div class="security-level__item security-level__item_checked">Up to 10 output addresses</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <div class="calculator" ng-controller="calculator">
+                <div class="toggle"><a href="#" ng-click="toggle($event)">{{show ? 'Hide calculator' :
+                  'Show calculator'}}</a></div>
+                <div class="row" ng-show="show">
+                  <div class="col-md-6">
+                    <p>You send:</p>
+                    <div class="code-group" ng-repeat="item in operation.items" ng-if="operation.items.length">
+                      <input class="input btc" type="text" ng-model="sentAmount[$index]" ng-keyup="updateAmounts()"/>
+                      <div class="address">
+                        BTC <span ng-show="operation.state == 'ready'">to <em>{{getShotAddress(item.InputAddress)}}</em></span>
+                      </div>
+                    </div>
+              
+              
+                     <div class="code-group" ng-if="!operation.items.length">
+                      <input class="input btc" type="text" ng-model="sentAmount[0]" ng-keyup="updateAmounts()"/>
+                      <div class="address">BTC</div>
+                    </div>
+                  </div>
+              
+                  <div class="col-md-6">
+                    <p>You receive <span class="quest-hint"
+                                         tooltip-placement="bottom"
+                                         uib-tooltip-template="'receiveAmount'">?</span>:</p>
+                    <script type="text/ng-template" id="receiveAmount">
+                      <span>Received amounts could randomly vary to prevent amount-based analysis</span>
+                    </script>
+                    <div class="code-group" ng-repeat="item in items | filter:item.address.$valid">
+                      <input class="input btc" type="text" ng-model="amounts[$index]" ng-keyup="updateFromReceive($index)"/>
+                      <div class="address">
+                        BTC <span ng-show="items.length > 1">({{item.percent.toFixed(2)}}%)</span>
+                        <span
+              
+                            ng-show="delay && item.delay > 0">after <em>{{getItemDelay(item)}}</em></span>
+                        <span ng-hide="delay && item.delay > 0">immediately</span>
+                        <br/><span ng-show="item.address">to <em>{{getShotAddress(item.address)}}</em></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" ng-show="show">
+                  <div class="col-md-12">
+                    <p class="hint">
+                      Your personal fee {{getFee() - getDiscount()}}%+{{fixFee}} BTC for every forward address
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row continue">
+            <div class="col-md-12 text-center">
+              <div class="error" ng-show="operation.state == 'error'">{{operation.error.code}}</div>
+              <button class="button accept_popup_open" ng-hide="!!acceptTerms" ng-disabled="addresses.$invalid" id="cont">Continue</button>
+              <button class="button" ng-show="!!acceptTerms" ng-click="submit()" ng-disabled="addresses.$invalid">Continue</button>
+              <p class="lets">
+                Mix my bitcoins
+              </p>
+            </div>
+          </div>
+          <div class="popup" id="accept_popup">
+            <span class="accept_popup_close close_button"></span>
+            <div class="popup_content">
+              <h3>
+                Please check and accept important terms
+              </h3>
+              <p>
+                <label>Incoming address is valid only for 24 hours. All further payments will be ignored. We do not store links between incoming and target addresses after operation is proceeded. Please, download the Letter of Guarantee before you send us coins. This will be a proof of your transaction.</label>
+              </p>
+              <p>
+                <input id="acceptTerms" name="acceptTerms" type="checkbox" ng-model="acceptTerms" /><label for="acceptTerms"><span></span>Don’t ask me again</label>
+              </p>
+              <p class="text-center">
+                <button type="submit" class="button" id="submit">Accept</button>
+                
+              </p>
+            </div>
+          </div>
+          </form>
+
+
+        </div>
+
+        <div class="status" ng-show="operation.state == 'ready'">
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="stepped step__letter">
+                <div class="headline" ng-hide="operation.items.length > 1">
+                  
+                </div>
+                <div class="headline" ng-show="operation.items.length > 1">
+                  <p>
+                    <span class="visible-lg-inline">Download Letters of Guarantee</span>
+                    <span class="hidden-lg">Save Letters of Guarantee</span>
+                    before send us coins:
+                  </p>
+        
+                  
+                </div>
+                <iframe id="letter_frame" name="letter_frame" style="position: absolute; top: -2000px; left: -2000px"></iframe>
+                <div class="step">2</div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="stepped">
+                <p class="headline">
+                  Send your coins (min 0.001, max {{operation.current.MaxAmount.toFixed(4)}} BTC) to:
+                </p>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="recipient">
+                      <ul>
+                        <li ng-repeat="item in operation.items">
+                          <label>
+                            <input type="radio" ng-model="operation.currentIndex" ng-change="operation.setCurrent($index + 1)" ng-show="operation.items.length > 1" value="{{$index + 1}}">
+                            <span class="bitaddress">{{item.InputAddress}}</span>  
+                          </label>
+                        </li>
+                      </ul>
+                      <!-- <div class="code">Your CoinMixer code: <b>{{bitcode}}</b></div> -->
+                      <div class="add-address" ng-click="operation.duplicate()" ng-hide="operation.duplicating">Add incoming address</div>
+                      <div class="loading" ng-show="operation.duplicating"></div>
+                    </div>
+                    <div class="operation-error" ng-show="operation.error">{{operation.error.code}}</div>
+                  </div>
+                </div>
+                <div class="calculator" ng-controller="calculator">
+                  <div class="toggle"><a href="#" ng-click="toggle($event)">{{show ? 'Hide calculator' :
+                    'Show calculator'}}</a></div>
+                  <div class="row" ng-show="show">
+                    <div class="col-md-6">
+                      <p>You send:</p>
+                      <div class="code-group" ng-repeat="item in operation.items" ng-if="operation.items.length">
+                        <input class="input btc" type="text" ng-model="sentAmount[$index]" ng-keyup="updateAmounts()"/>
+                        <div class="address">
+                          BTC <span ng-show="operation.state == 'ready'">to <em>{{getShotAddress(item.InputAddress)}}</em></span>
+                        </div>
+                      </div>
+                
+                
+                       <div class="code-group" ng-if="!operation.items.length">
+                        <input class="input btc" type="text" ng-model="sentAmount[0]" ng-keyup="updateAmounts()"/>
+                        <div class="address">BTC</div>
+                      </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                      <p>You receive <span class="quest-hint"
+                                           tooltip-placement="bottom"
+                                           uib-tooltip-template="'receiveAmount'">?</span>:</p>
+                      <script type="text/ng-template" id="receiveAmount">
+                        <span>Received amounts could randomly vary to prevent amount-based analysis</span>
+                      </script>
+                      <div class="code-group" ng-repeat="item in items | filter:item.address.$valid">
+                        <input class="input btc" type="text" ng-model="amounts[$index]" ng-keyup="updateFromReceive($index)"/>
+                        <div class="address">
+                          BTC <span ng-show="items.length > 1">({{item.percent.toFixed(2)}}%)</span>
+                          <span
+                
+                              ng-show="delay && item.delay > 0">after <em>{{getItemDelay(item)}}</em></span>
+                          <span ng-hide="delay && item.delay > 0">immediately</span>
+                          <br/><span ng-show="item.address">to <em>{{getShotAddress(item.address)}}</em></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" ng-show="show">
+                    <div class="col-md-12">
+                      <p class="hint">
+                        Your personal fee {{getFee() - getDiscount()}}%+{{fixFee}} BTC for every forward address
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="qr-code" ng-if="!operation.isSuccess() && operation.current.InputAddress">
+                      <img src="images/loading.svg.html" class="img-responsive qr-preloader"/>
+                      <img class="qr img-responsive" ng-src="{{utils.qrCodeLink(operation.current.InputAddress, 225)}}" imageonload/>
+                    </div>
+                    <div class="qr-code" ng-if="!operation.isSuccess() && !operation.current.InputAddress">
+                      preloader
+                    </div>
+                    <div class="success" ng-show="operation.isSuccess()"></div>
+                  </div>
+                </div>
+                <div class="step">3</div>
+                <div class="row" ng-if="operation.current.TotalInputAmount <= 0.001 && operation.current.InputCount > 0 && !operation.isSuccess()">
+                  <div class="col-md-12 wait-warning">
+                    Amount is less than required
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center wait-payment">
+              <a class="update" ng-class="{active: !operation.isSuccess()}" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <p ng-show="operation.current.InputCount == 0 || operation.isSuccess()">
+                <strong>Do you know:</strong> When you use CoinMixer with the same code, you pay less service fee! Your CoinMixer code is: <b>{{bitcode}}</b>. Save it! See <a href="fees.html" target="_blank">Fees</a> for details.
+              </p>
+              <div ng-show="operation.current.InputCount > 0 && !operation.isSuccess()">
+                <p ng-show="operation.current.InputCount == 0">Received {{operation.current.TotalInputAmount}} BTC</p>
+                <p ng-show="operation.current.InputCount == 1">Received {{operation.current.TotalInputAmount}} BTC, <ng-pluralize count="operation.current.LastInputConfirmations" when="{'0': '0 confirmations', 'one': '1 confirmation','other': '{} confirmations'}"></ng-pluralize></p>
+                <p ng-show="operation.current.InputCount > 1">Total received {{operation.current.TotalInputAmount}} BTC, Last has <ng-pluralize count="operation.current.LastInputConfirmations" when="{'0': '0 confirmations', 'one': '1 confirmation','other': '{} confirmations'}"></ng-pluralize></p>
+                <p ng-show="operation.current.OutputCount > 0">
+                  Outputs:
+                  <span ng-show="!operation.current.PendingOutputAmount">{{operation.current.SentOutputAmount}} Sent</span>
+                  <span ng-show="!operation.current.SentOutputAmount">{{operation.current.PendingOutputAmount}} Pending</span>
+                  <span ng-show="operation.current.SentOutputAmount && operation.current.PendingOutputAmount">{{operation.current.SentOutputAmount}} Sent, {{operation.current.PendingOutputAmount}} Pending</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="popup" id="letter_popup">
+          <span class="letter_popup_close close_button"></span>
+          <h3>
+            Copy and save Letter of a Guarantee
+          </h3>
+          <textarea class="letter-textarea" ng-model="operation.current.Letter"></textarea>
+          <p class="text-center">
+            <button class="button" ng-click="selectLetterText()">Select all</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="intro" id="content1" style="display: none">
+         
+        <div class="status" >
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="stepped step__letter">
+                <div class="headline" ng-hide="operation.items.length > 1">
+                  <form action="https://CoinMixers.io/mfqs-zbhq-tozt-xtdu" method="GET" target="letter_frame">
+                      <p>
+        
+                        <button class="button__letter visible-lg-inline" type="submit" ng-click="operation.download()"> <a href="LetterOfGuarantee.txt"> Download the Letter of Guarantee </a></button>
+                        <button class="button__letter hidden-lg letter_popup_open" ng-click="operation.download()">Save the Letter of Guarantee</button>
+                        before send us coins
+                      </p>
+                      <a href="LetterOfGuarantee(1).txt" class="button__letter visible-lg-inline" > <small id="letter1" style="display: none">Letter of Guarantee #1</small></a>
+                      <a href="LetterOfGuarantee(2).txt" class="button__letter visible-lg-inline" > <small id="letter2" style="display: none">Letter of Guarantee #2</small></a>
+                      <a href="LetterOfGuarantee(3).txt" class="button__letter visible-lg-inline" > <small id="letter3" style="display: none">Letter of Guarantee #3</small></a>
+                      <a href="LetterOfGuarantee(4).txt" class="button__letter visible-lg-inline" > <small id="letter4" style="display: none">Letter of Guarantee #4</small></a>
+                      <a href="LetterOfGuarantee(5).txt" class="button__letter visible-lg-inline" > <small id="letter5" style="display: none">Letter of Guarantee #5</small></a>
+                      <a href="LetterOfGuarantee(6).txt" class="button__letter visible-lg-inline" > <small id="letter6" style="display: none">Letter of Guarantee #6</small></a>
+                      <a href="LetterOfGuarantee(7).txt" class="button__letter visible-lg-inline" > <small id="letter7" style="display: none">Letter of Guarantee #7</small></a>
+                      <a href="LetterOfGuarantee(8).txt" class="button__letter visible-lg-inline" > <small id="letter8" style="display: none">Letter of Guarantee #8</small></a>
+                      <a href="LetterOfGuarantee(9).txt" class="button__letter visible-lg-inline" > <small id="letter9" style="display: none">Letter of Guarantee #9</small></a>
+                      <a href="LetterOfGuarantee(10).txt" class="button__letter visible-lg-inline" > <small id="letter10" style="display: none">Letter of Guarantee #10</small></a>
+                      <a href="LetterOfGuarantee(11).txt" class="button__letter visible-lg-inline" > <small id="letter11" style="display: none">Letter of Guarantee #11</small></a>
+                      <a href="LetterOfGuarantee(12).txt" class="button__letter visible-lg-inline" > <small id="letter12" style="display: none">Letter of Guarantee #12</small></a>
+                      <a href="LetterOfGuarantee(13).txt" class="button__letter visible-lg-inline" > <small id="letter13" style="display: none">Letter of Guarantee #13</small></a>
+                      <a href="LetterOfGuarantee(14).txt" class="button__letter visible-lg-inline" > <small id="letter14" style="display: none">Letter of Guarantee #14</small></a>
+                      <a href="LetterOfGuarantee(15).txt" class="button__letter visible-lg-inline" > <small id="letter15" style="display: none">Letter of Guarantee #15</small></a>
+                      <a href="LetterOfGuarantee(16).txt" class="button__letter visible-lg-inline" > <small id="letter16" style="display: none">Letter of Guarantee #16</small></a>
+                      <a href="LetterOfGuarantee(17).txt" class="button__letter visible-lg-inline" > <small id="letter17" style="display: none">Letter of Guarantee #17</small></a>
+                      <a href="LetterOfGuarantee(18).txt" class="button__letter visible-lg-inline" > <small id="letter18" style="display: none">Letter of Guarantee #18</small></a>
+                      <a href="LetterOfGuarantee(19).txt" class="button__letter visible-lg-inline" > <small id="letter19" style="display: none">Letter of Guarantee #19</small></a>
+                      <a href="LetterOfGuarantee(20).txt" class="button__letter visible-lg-inline" > <small id="letter20" style="display: none">Letter of Guarantee #20</small></a>
+                      <a href="LetterOfGuarantee(21).txt" class="button__letter visible-lg-inline" > <small id="letter21" style="display: none">Letter of Guarantee #21</small></a>
+                      <a href="LetterOfGuarantee(22).txt" class="button__letter visible-lg-inline" > <small id="letter22" style="display: none">Letter of Guarantee #22</small></a>
+                      <a href="LetterOfGuarantee(23).txt" class="button__letter visible-lg-inline" > <small id="letter23" style="display: none">Letter of Guarantee #23</small></a>
+                      <a href="LetterOfGuarantee(24).txt" class="button__letter visible-lg-inline" > <small id="letter24" style="display: none">Letter of Guarantee #24</small></a>
+                      <a href="LetterOfGuarantee(25).txt" class="button__letter visible-lg-inline" > <small id="letter25" style="display: none">Letter of Guarantee #25</small></a>
+                      <a href="LetterOfGuarantee(26).txt" class="button__letter visible-lg-inline" > <small id="letter26" style="display: none">Letter of Guarantee #26</small></a>
+                      <a href="LetterOfGuarantee(27).txt" class="button__letter visible-lg-inline" > <small id="letter27" style="display: none">Letter of Guarantee #27</small></a>
+                      <a href="LetterOfGuarantee(28).txt" class="button__letter visible-lg-inline" > <small id="letter28" style="display: none">Letter of Guarantee #28</small></a>
+                      <a href="LetterOfGuarantee(29).txt" class="button__letter visible-lg-inline" > <small id="letter29" style="display: none">Letter of Guarantee #29</small></a>
+                      <a href="LetterOfGuarantee(30).txt" class="button__letter visible-lg-inline" > <small id="letter30" style="display: none">Letter of Guarantee #30</small></a>
+                      <a href="LetterOfGuarantee(31).txt" class="button__letter visible-lg-inline" > <small id="letter31" style="display: none">Letter of Guarantee #31</small></a>
+                      <a href="LetterOfGuarantee(32).txt" class="button__letter visible-lg-inline" > <small id="letter32" style="display: none">Letter of Guarantee #32</small></a>
+                      <a href="LetterOfGuarantee(33).txt" class="button__letter visible-lg-inline" > <small id="letter33" style="display: none">Letter of Guarantee #33</small></a>
+                      <a href="LetterOfGuarantee(34).txt" class="button__letter visible-lg-inline" > <small id="letter34" style="display: none">Letter of Guarantee #34</small></a>
+                      <a href="LetterOfGuarantee(35).txt" class="button__letter visible-lg-inline" > <small id="letter35" style="display: none">Letter of Guarantee #35</small></a>
+                      <a href="LetterOfGuarantee(36).txt" class="button__letter visible-lg-inline" > <small id="letter36" style="display: none">Letter of Guarantee #36</small></a>
+                      <a href="LetterOfGuarantee(37).txt" class="button__letter visible-lg-inline" > <small id="letter37" style="display: none">Letter of Guarantee #37</small></a>
+                      <a href="LetterOfGuarantee(38).txt" class="button__letter visible-lg-inline" > <small id="letter38" style="display: none">Letter of Guarantee #38</small></a>
+                      <a href="LetterOfGuarantee(39).txt" class="button__letter visible-lg-inline" > <small id="letter39" style="display: none">Letter of Guarantee #39</small></a>
+                      <a href="LetterOfGuarantee(40).txt" class="button__letter visible-lg-inline" > <small id="letter40" style="display: none">Letter of Guarantee #40</small></a>
+                      <a href="LetterOfGuarantee(41).txt" class="button__letter visible-lg-inline" > <small id="letter41" style="display: none">Letter of Guarantee #41</small></a>
+                      <a href="LetterOfGuarantee(42).txt" class="button__letter visible-lg-inline" > <small id="letter42" style="display: none">Letter of Guarantee #42</small></a>
+                      <a href="LetterOfGuarantee(43).txt" class="button__letter visible-lg-inline" > <small id="letter43" style="display: none">Letter of Guarantee #43</small></a>
+                      <a href="LetterOfGuarantee(44).txt" class="button__letter visible-lg-inline" > <small id="letter44" style="display: none">Letter of Guarantee #44</small></a>
+                      <a href="LetterOfGuarantee(45).txt" class="button__letter visible-lg-inline" > <small id="letter45" style="display: none">Letter of Guarantee #45</small></a>
+                      <a href="LetterOfGuarantee(46).txt" class="button__letter visible-lg-inline" > <small id="letter46" style="display: none">Letter of Guarantee #46</small></a>
+                      <a href="LetterOfGuarantee(47).txt" class="button__letter visible-lg-inline" > <small id="letter47" style="display: none">Letter of Guarantee #47</small></a>
+                      <a href="LetterOfGuarantee(48).txt" class="button__letter visible-lg-inline" > <small id="letter48" style="display: none">Letter of Guarantee #48</small></a>
+
+
+                  </form>
+                </div>
+                <div class="headline" ng-show="operation.items.length > 1">
+                  <p>
+                    <span class="visible-lg-inline">Download Letters of Guarantee</span>
+                    <span class="hidden-lg">Save Letters of Guarantee</span>
+                    before send us coins:
+                  </p>
+                  
+        
+                  <div >
+                    
+                      <button class="button__letter visible-lg-inline" type="submit" ng-click="operation.download($index)">Letter of Guarantee #{{$index + 1}}</button>
+                      <button class="button__letter hidden-lg letter_popup_open" ng-click="operation.download($index)">Letter of Guarantee #{{$index + 1}}</button>
+                    
+                  </div>
+                </div>
+                <iframe id="letter_frame" name="letter_frame" style="position: absolute; top: -2000px; left: -2000px"></iframe>
+                <div class="step">2</div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="stepped">
+                <p class="headline">
+                                    Send your coins (min 0.001, max 150.712 BTC) to:
+                </p>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="recipient">
+                      <ul>
+                        <li class="form-main">
+                          <label>
+                            <input type="radio" id="r0" name="radio" class="radiobtn" style="display: none">
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main0" style="display: none">
+                          <label>
+                            <input type="radio" id="r1" name="radio" class="radiobtn" style="display: none">
+                            <span class="bitaddress ">1Mf4Sj1JbVnYhq38VHk8WNuto5Y6BaSxze</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main1" style="display: none">
+                          <label>
+                            <input type="radio" id="r2" name="radio"  class="radiobtn">
+                            <span class="bitaddress ">1n25A3tADVFzexPvHUd1wmQD5nXc1UijB</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main2" style="display: none">
+                          <label>
+                            <input type="radio" id="r3" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1NxmgxE8JZXuHRs8A6BRp5ja4UCFUntJy9</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main3" style="display: none">
+                          <label>
+                            <input type="radio" id="r4" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">17yDooNYupvY28Cr1RJozp1JWqELpVZKJ1</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main4" style="display: none">
+                          <label>
+                            <input type="radio" id="r5" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">16jgi7drRezNLpufsW8ProkitwCM3KNdgt</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main5" style="display: none">
+                          <label>
+                            <input type="radio" id="r6" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main6" style="display: none">
+                          <label>
+                            <input type="radio" id="r7" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main7" style="display: none">
+                          <label>
+                            <input type="radio" id="r8" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main8" style="display: none">
+                          <label>
+                            <input type="radio" id="r9" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main9" style="display: none">
+                          <label>
+                            <input type="radio" id="r10" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main10" style="display: none">
+                          <label>
+                            <input type="radio" id="r11" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main11" style="display: none">
+                          <label>
+                            <input type="radio" id="r12" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main12" style="display: none">
+                          <label>
+                            <input type="radio" id="r13" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main13" style="display: none">
+                          <label>
+                            <input type="radio" id="r14" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main14" style="display: none">
+                          <label>
+                            <input type="radio" id="r15" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main15" style="display: none">
+                          <label>
+                            <input type="radio"  id="r16" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main16" style="display: none">
+                          <label>
+                            <input type="radio"  id="r17" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main17" style="display: none">
+                          <label>
+                            <input type="radio"  id="r18" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main18" style="display: none">
+                          <label>
+                            <input type="radio"  id="r19" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main19" style="display: none">
+                          <label>
+                            <input type="radio"  id="r20" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main20" style="display: none">
+                          <label>
+                            <input type="radio"  id="r21" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main21" style="display: none">
+                          <label>
+                            <input type="radio"  id="r22" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main22" style="display: none">
+                          <label>
+                            <input type="radio"  id="r23" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main23" style="display: none">
+                          <label>
+                            <input type="radio"  id="r24" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main24" style="display: none">
+                          <label>
+                            <input type="radio" id="r25" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main25" style="display: none">
+                          <label>
+                            <input type="radio" id="r26" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main26" style="display: none">
+                          <label>
+                            <input type="radio" id="r27" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main27" style="display: none">
+                          <label>
+                            <input type="radio" id="r28" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main28" style="display: none">
+                          <label>
+                            <input type="radio" id="r29" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main29" style="display: none">
+                          <label>
+                            <input type="radio" id="r30" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main30" style="display: none">
+                          <label>
+                            <input type="radio" id="r31" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main31" style="display: none">
+                          <label>
+                            <input type="radio" id="r32" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main32" style="display: none">
+                          <label>
+                            <input type="radio" id="r33" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main33" style="display: none">
+                          <label>
+                            <input type="radio" id="r34" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main34" style="display: none">
+                          <label>
+                            <input type="radio" id="r35" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main35" style="display: none">
+                          <label>
+                            <input type="radio" id="r36" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main36" style="display: none">
+                          <label>
+                            <input type="radio" id="r37" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CJ2VUVkU5cxk8JMPiVbswCW6gPA11YRem</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main37" style="display: none">
+                          <label>
+                            <input type="radio" id="r38" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main38" style="display: none">
+                          <label>
+                            <input type="radio" id="r39" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main39" style="display: none">
+                          <label>
+                            <input type="radio" id="r40" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main40" style="display: none">
+                          <label>
+                            <input type="radio" id="r41" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main41" style="display: none">
+                          <label>
+                            <input type="radio" id="r42" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main42" style="display: none">
+                          <label>
+                            <input type="radio" id="r43" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main43" style="display: none">
+                          <label>
+                            <input type="radio" id="r44" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main44" style="display: none">
+                          <label>
+                            <input type="radio" id="r45" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main45" style="display: none">
+                          <label>
+                            <input type="radio" id="r46" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main46" style="display: none">
+                          <label>
+                            <input type="radio" id="r47" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+                        <li class="form-main47" style="display: none">
+                          <label>
+                            <input type="radio" id="r48" name="radio" class="radiobtn">                              
+                            <span class="bitaddress ">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</span>  
+                          </label>
+                        </li>
+
+
+                      </ul>
+                      <!-- <div class="code">Your CoinMixer code: <b>{{bitcode}}</b></div> -->
+                      <div class="add-address" >Add incoming address</div>
+                      <div class="loading"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calculator" ng-controller="calculator">
+                  <div class="toggle"><a href="#" ng-click="toggle($event)">{{show ? 'Hide calculator' :
+                    'Show calculator'}}</a></div>
+                  <div class="row" ng-show="show">
+                    <div class="col-md-6">
+                      <p>You send:</p>
+                      <div class="code-group" ng-repeat="item in operation.items" ng-if="operation.items.length">
+                        <input class="input btc" type="text" ng-model="sentAmount[$index]" ng-keyup="updateAmounts()"/>
+                        <div class="address">
+                          BTC <span ng-show="operation.state == 'ready'">to <em>{{getShotAddress(item.InputAddress)}}</em></span>
+                        </div>
+                      </div>
+                      <div class="code-group" id="calc0">
+                        <input class="input btc" id="c0" type="text" value="0" ng-model="sentAmount[0]" ng-keyup="updateAmounts()"/>
+                        <div class="address">BTC to 1CoiN ... mRo8</div>
+                      </div>                  
+                
+                       <div class="code-group" id="calc1" style="display: none">
+                        <input class="input btc" id="c1" type="text" />
+                        <div class="address">BTC to 13fj...871B</div>
+                      </div>
+                      <div class="code-group" id="calc2" style="display: none">
+                        <input class="input" type="text" id="c2"/>
+                        <div class="address">BTC to 161F...qmMr</div>
+                      </div>
+
+                      <div class="code-group" id="calc3" style="display: none">
+                        <input class="input btc" type="text" id="c3"/>
+                        <div class="address">BTC to 19M6...Jrz4</div>
+                      </div>
+
+                      <div class="code-group" id="calc4" style="display: none" >
+                        <input class="input btc" type="text" id="c4"/>
+                        <div class="address">BTC to 1MUj...qrZQ</div>
+                      </div>
+
+                      <div class="code-group" id="calc5" style="display: none">
+                        <input class="input btc" type="text" id="c5"/>
+                        <div class="address">BTC to 1L4R...v2ak</div>
+                      </div>
+
+                      <div class="code-group" id="calc6" style="display: none">
+                        <input class="input btc" type="text" id="c6"/>
+                        <div class="address">BTC to 17d8...uiFg</div>
+                      </div>
+
+                      <div class="code-group" id="calc7" style="display: none">
+                        <input class="input btc" type="text" id="c7"/>
+                        <div class="address">BTC to 1PEL...tJ52</div>
+                      </div>
+
+                      <div class="code-group" id="calc8" style="display: none">
+                        <input class="input btc" type="text" id="c8"/>
+                        <div class="address">BTC to 1MhG...w3Bv</div>
+                      </div>
+
+                      <div class="code-group" id="calc9" style="display: none">
+                        <input class="input btc" type="text" id="c9"/>
+                        <div class="address">BTC to 16Tm...Y4Zi</div>
+                      </div>
+
+                      <div class="code-group" id="calc10" style="display: none">
+                        <input class="input btc" type="text" id="c10"/>
+                        <div class="address">BTC to 15kT...uzWi</div>
+                      </div>
+
+                      <div class="code-group" id="calc11" style="display: none" >
+                        <input class="input btc" type="text" id="c11"/>
+                        <div class="address">BTC to 1nCi...nw2u</div>
+                      </div>
+
+                      <div class="code-group" id="calc12" style="display: none">
+                        <input class="input btc" type="text" id="c12"/>
+                        <div class="address">BTC to 1Lkr...uaZW</div>
+                      </div>
+
+                      <div class="code-group" id="calc13" style="display: none">
+                        <input class="input btc" type="text" id="c13"/>
+                        <div class="address">BTC to 18ST...5MFj</div>
+                      </div>
+
+                      <div class="code-group" id="calc14" style="display: none">
+                        <input class="input btc" type="text" id="c14"/>
+                        <div class="address">BTC to 1Pnp...7Zoq</div>
+                      </div>
+
+                      <div class="code-group" id="calc15" style="display: none">
+                        <input class="input btc" type="text" id="c15"/>
+                        <div class="address">BTC to 1Cj4...HxJD</div>
+                      </div>
+
+                      <div class="code-group" id="calc16" style="display: none">
+                        <input class="input btc" type="text" id="c16"/>
+                        <div class="address">BTC to 1FcF...mNPp</div>
+                      </div>
+
+                      <div class="code-group" id="calc17" style="display: none">
+                        <input class="input btc" type="text" id="c17"/>
+                        <div class="address">BTC to 1FkR...DQv2</div>
+                      </div>
+
+                      <div class="code-group" id="calc18" style="display: none">
+                        <input class="input btc" type="text" id="c18"/>
+                        <div class="address">BTC to 13zL...Br7G</div>
+                      </div>
+
+                      <div class="code-group" id="calc19" style="display: none">
+                        <input class="input btc" type="text" id="c19"/>
+                        <div class="address">BTC to 1PiQ...FUuC</div>
+                      </div>
+
+                      <div class="code-group" id="calc20" style="display: none">
+                        <input class="input btc" type="text" id="c20"/>
+                        <div class="address">BTC to 151z...yPzg</div>
+                      </div>
+
+                      <div class="code-group" id="calc21" style="display: none" >
+                        <input class="input btc" type="text" ng-model="sentAmount[0]" id="c21"/>
+                        <div class="address">BTC to 16Yh...oirj</div>
+                      </div>
+
+                      <div class="code-group" id="calc22" style="display: none">
+                        <input class="input btc" type="text" id="c22"/>
+                        <div class="address">BTC to 13Mk...B1da</div>
+                      </div>
+
+                      <div class="code-group" id="calc23" style="display: none">
+                        <input class="input btc" type="text" id="c23"/>
+                        <div class="address">BTC to 1Aw7...5gjJ</div>
+                      </div>
+
+                      <div class="code-group" id="calc24" style="display: none">
+                        <input class="input btc" type="text" id="c24"/>
+                        <div class="address">BTC to 1Bpk...yMtk</div>
+                      </div>
+
+                      <div class="code-group" id="calc25" style="display: none">
+                        <input class="input btc" type="text" id="c25"/>
+                        <div class="address">BTC to 1fa8...wWxC</div>
+                      </div>
+
+                      <div class="code-group" id="calc26" style="display: none">
+                        <input class="input btc" type="text" id="c26"/>
+                        <div class="address">BTC to 1Fk3...53zn</div>
+                      </div>
+
+                      <div class="code-group" id="calc27" style="display: none">
+                        <input class="input btc" type="text" id="c27"/>
+                        <div class="address">BTC to 1BPH...td21</div>
+                      </div>
+
+                      <div class="code-group" id="calc28" style="display: none">
+                        <input class="input btc" type="text" id="c28"/>
+                        <div class="address">BTC to 1FpC...UBM6</div>
+                      </div>
+
+                      <div class="code-group" id="calc29" style="display: none">
+                        <input class="input btc" type="text" id="c29"/>
+                        <div class="address">BTC to 1KYx...YyDp</div>
+                      </div>
+
+                      <div class="code-group" id="calc30" style="display: none">
+                        <input class="input btc" type="text" id="c30"/>
+                        <div class="address">BTC to 17XL...pEJo</div>
+                      </div>
+
+                      <div class="code-group" id="calc31" style="display: none" >
+                        <input class="input btc" type="text" id="c31"/>
+                        <div class="address">BTC to 1FQi...tfbE</div>
+                      </div>
+
+                      <div class="code-group" id="calc32" style="display: none">
+                        <input class="input btc" type="text" id="c32"/>
+                        <div class="address">BTC to 14sT...tHUG</div>
+                      </div>
+
+                      <div class="code-group" id="calc33" style="display: none">
+                        <input class="input btc" type="text" id="c33"/>
+                        <div class="address">BTC to 17cR...mqnh</div>
+                      </div>
+
+                      <div class="code-group" id="calc34" style="display: none">
+                        <input class="input btc" type="text" id="c34"/>
+                        <div class="address">BTC to 1PLx...WAxz</div>
+                      </div>
+
+                      <div class="code-group" id="calc35" style="display: none">
+                        <input class="input btc" type="text" id="c35"/>
+                        <div class="address">BTC to 1Do9...MvYu</div>
+                      </div>
+
+                      <div class="code-group" id="calc36" style="display: none">
+                        <input class="input btc" type="text" id="c36"/>
+                        <div class="address">BTC to 1GMe...wT7A</div>
+                      </div>
+
+                      <div class="code-group" id="calc37" style="display: none">
+                        <input class="input btc" type="text" id="c37"/>
+                        <div class="address">BTC to 1CJ2...YRem</div>
+                      </div>
+
+                      <div class="code-group" id="calc38" style="display: none">
+                        <input class="input btc" type="text" id="c38"/>
+                        <div class="address">BTC to 1HG6...oacZ</div>
+                      </div>
+
+                      <div class="code-group" id="calc39" style="display: none">
+                        <input class="input btc" type="text" id="c39"/>
+                        <div class="address">BTC to 1L1B...P9PZ</div>
+                      </div>
+
+                      <div class="code-group" id="calc40" style="display: none">
+                        <input class="input btc" type="text" id="c40"/>
+                        <div class="address">BTC to 1Nqn...43k2</div>
+                      </div>
+
+                      <div class="code-group" id="calc41" style="display: none" >
+                        <input class="input btc" type="text" ng-model="sentAmount[0]" id="c41"/>
+                        <div class="address">BTC to 12ky...ts8k</div>
+                      </div>
+
+                      <div class="code-group" id="calc42" style="display: none">
+                        <input class="input btc" type="text" id="c42"/>
+                        <div class="address">BTC to 1BMw...NXuk</div>
+                      </div>
+
+                      <div class="code-group" id="calc43" style="display: none">
+                        <input class="input btc" type="text" id="c43"/>
+                        <div class="address">BTC to 18aq...YLjw</div>
+                      </div>
+
+                      <div class="code-group" id="calc44" style="display: none">
+                        <input class="input btc" type="text" id="c44"/>
+                        <div class="address">BTC to 1B6B...dUyL</div>
+                      </div>
+
+                      <div class="code-group" id="calc45" style="display: none">
+                        <input class="input btc" type="text" id="c45"/>
+                        <div class="address">BTC to 12Rb...N8BB</div>
+                      </div>
+
+                      <div class="code-group" id="calc46" style="display: none">
+                        <input class="input btc" type="text" id="c46"/>
+                        <div class="address">BTC to 1ACy...Biqp</div>
+                      </div>
+
+                      <div class="code-group" id="calc47" style="display: none">
+                        <input class="input btc" type="text" id="c47"/>
+                        <div class="address">BTC to 1262...KhXG</div>
+                      </div>
+
+                      <div class="code-group" id="calc48" style="display: none">
+                        <input class="input btc" type="text" id="c48"/>
+                        <div class="address">BTC to 1Mwb...7KYh</div>
+                      </div>                      
+
+                    </div>
+                
+                    <div class="col-md-6">
+                      <p>You receive <span class="quest-hint"
+                                           tooltip-placement="bottom"
+                                           uib-tooltip-template="'receiveAmount'">?</span>:</p>
+                      <script type="text/ng-template" id="receiveAmount">
+                        <span>Received amounts could randomly vary to prevent amount-based analysis</span>
+                      </script>
+                      <div class="code-group">
+                        <input class="input btc" id="result" type="text" ng-model="amounts[$index]" ng-keyup="updateFromReceive($index)"/>
+                        <div class="address">
+                          BTC <span ng-show="items.length > 1">({{item.percent.toFixed(2)}}%)</span>
+                          <span
+                
+                              ng-show="delay && item.delay > 0">after <em>{{getItemDelay(item)}}</em></span>
+                          <span ng-hide="delay && item.delay > 0">immediately </span>
+                          
+                          <br/><span >to  1CoiN ... mRo8</em></span>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" ng-show="show">
+                    <div class="col-md-12">
+                      <p class="hint">
+                        Your personal fee <span id="fee"> 1.9682</span>%+{{fixFee}} BTC for every forward address
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <div class="qr-code" id="qr0" style="display: block">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/iCoinM.jpg"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr1" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793430533925.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr2" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793443698903.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr3" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793441899080.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr4" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793423571340.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr5" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793421792717.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr6" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793437735436.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr7" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793426630956.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr8" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793422946560.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr9" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793434015565.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr10" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793433333150.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr11" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793425276928.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr12" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793422328682.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr13" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793441019474.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr14" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793428374197.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr15" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793413574949.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr16" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793415686057.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr17" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793417053418.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr18" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793431651695.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr19" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793427251633.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr20" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793442628710.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr21" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793435887337.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr22" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793431134258.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr23" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793408432329.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr24" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793411744661.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr25" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793415028714.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr26" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793416223963.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr27" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793410864100.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr28" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793417768718.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr29" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793420219067.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr30" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793438572943.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr31" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793418420768.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr32" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793432365189.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr33" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793436970657.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr34" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793427898872.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr35" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793414393664.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr36" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793419078823.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr37" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793412735037.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr38" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793419626539.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr39" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793421073161.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr40" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793426017803.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr41" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793429281732.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr42" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793410260785.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr43" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793440054565.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr44" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793409449590.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr45" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793429995623.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr46" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793406842499.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr47" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793444619393.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" id="qr48" style="display: none">
+                      <img src="public/assets/images/loading.svg" class="img-responsive loadingqr"/>
+                      <img class="qrimg img-responsive" src="public/assets/qrcodes/160793424192165.png"  width="240px" imageonload/>
+                    </div>
+
+                    <div class="qr-code" ng-if="operation.isSuccess() && !operation.current.InputAddress">
+                      preloader
+                    </div>
+                    <div class="success" ng-show="operation.isSuccess()"></div>
+                  </div>
+                </div>
+                <div class="step">3</div>
+                <div class="row" ng-if="operation.current.TotalInputAmount <= 0.001 && operation.current.InputCount > 0 && !operation.isSuccess()">
+                  <div class="col-md-12 wait-warning">
+                    Amount is less than required
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center wait-payment">
+              <a class="update" ng-class="{active: !operation.isSuccess()}" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              <p >
+                <strong>Do you know:</strong> When you use CoinMixer with the same code, you pay less service fee! Your CoinMixer code is: 
+                                <b><span id="bitcode"></span></b>
+                                 Save it! See <a href="fees.html" target="_blank">Fees</a> for details.
+              </p>
+              <div ng-show="operation.current.InputCount > 0 && !operation.isSuccess()">
+                <p ng-show="operation.current.InputCount == 0">Received {{operation.current.TotalInputAmount}} BTC</p>
+                <p ng-show="operation.current.InputCount == 1">Received {{operation.current.TotalInputAmount}} BTC, <ng-pluralize count="operation.current.LastInputConfirmations" when="{'0': '0 confirmations', 'one': '1 confirmation','other': '{} confirmations'}"></ng-pluralize></p>
+                <p ng-show="operation.current.InputCount > 1">Total received {{operation.current.TotalInputAmount}} BTC, Last has <ng-pluralize count="operation.current.LastInputConfirmations" when="{'0': '0 confirmations', 'one': '1 confirmation','other': '{} confirmations'}"></ng-pluralize></p>
+                <p ng-show="operation.current.OutputCount > 0">
+                  Outputs:
+                  <span ng-show="!operation.current.PendingOutputAmount">{{operation.current.SentOutputAmount}} Sent</span>
+                  <span ng-show="!operation.current.SentOutputAmount">{{operation.current.PendingOutputAmount}} Pending</span>
+                  <span ng-show="operation.current.SentOutputAmount && operation.current.PendingOutputAmount">{{operation.current.SentOutputAmount}} Sent, {{operation.current.PendingOutputAmount}} Pending</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="popup" id="letter_popup">
+          <span class="letter_popup_close close_button"></span>
+          <h3>
+            Copy and save Letter of a Guarantee
+          </h3>
+          <textarea class="letter-textarea" ng-model="operation.current.Letter"></textarea>
+          <p class="text-center">
+            <button class="button" ng-click="selectLetterText()">Select all</button>
+          </p>
+        </div>
+
+
+
+
+    </div>
+      
+    </div>
+  </section>
+
+  
+ 
+    </div>
+    <div class="section-row">
+      <footer class="footer">
+        <ul class="nav">
+          <li>
+            <a href="fees.html">Fees</a>
+          </li>
+          <li>
+            <a href="faqs.html">FAQ</a>
+          </li>
+          <li>
+            <a href="javascript:zE.activate()">Contacts</a>
+          </li>
+          <li>
+          </li>
+        </ul>
+        <div class="donations">Donations: <a href="donate.html" target="_blank">1CoiNGzHpiYyJrQ4Uppz5A9EAF1cYcuKEf</a></div>
+        <div>Official TOR mirror: <a href="http://coinmixns23scr.onion/">coinmixns23scr.onion</a>
+<!--          Language:-->
+<!--          <a href="/ru">ru</a>-->
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="feedbackWidget" ng-controller="feedbackWidget" ng-cloak>
+    <div ng-show="opened" class="feedbackButton feedbackButton__mail" ng-click="mailto()"></div>
+    <div ng-show="opened && !chatLoading" class="feedbackButton feedbackButton__chat" ng-click="openChat()"></div>
+    <div ng-show="chatLoading" class="feedbackButton feedbackButton__loading"></div>
+    <div ng-hide="opened" class="feedbackButton feedbackButton__help" ng-click="open()"></div>
+    <div ng-show="opened" class="feedbackButton feedbackButton__close" ng-click="close()"></div>
+  </div>
+
+  <div class="wrapper" ng-if="maintanance" ng-cloak>
+    <div class="section-row section-row__extended align-middle">
+      <div class="section-cell section-cell__align-middle">
+        <div class="container">
+          <h1 class="text-center">
+            {{maintanance.caption}}
+          </h1>
+          <br/>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <p class="intro-picture">
+                <img src="public/assets/images/index2.png" class="img-responsive" alt="best bitcoin tumbler"/>
+              </p>
+              <br/>
+              <p>
+                {{maintanance.message}}
+              </p>
+              <br/>
+              <p class="text-center">
+                <a ng-href="{{maintanance.button.url}}" class="button">{{maintanance.button.text}}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script>
+		var windowID = 'mfqs-zbhq-tozt-xtdu';
+	</script>
+  <script src="public/assets/js/builde4dae4da%EF%B9%965.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script language="javascript" type="text/javascript">
+  
+    // function submitDetailsForm() {
+
+    //   var security_level = $("#security_level").text()
+    //   var service_fee = $("#service_fee").text()
+
+    //   $("#security_level_input").val(security_level)
+    //   $("#service_fee_input").val(service_fee)
+
+
+    //    $("#addressform").submit();
+    // }
+
+
+    
+
+
+    $( '#submit' ).on( 'click', function(e) {
+        e.preventDefault();
+
+
+
+        $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $('.mixer').css('display', 'none');
+            $('#content1').css('display', 'block');
+
+
+
+        // var name = $(this).find('input[name=name]').val();
+        $('.popup').hide();
+        $("#accept_popup_background").css('visibility', 'hidden');
+        $.ajax({
+
+            type: "POST",
+            url: 'post',
+            data:$('#addressform').serialize(),
+        }).done(function( msg ) {
+        
+            $("#bitcode").text(msg);
+          
+          $('.mixer').css('display', 'none');
+            $('#content1').css('display', 'block');
+            
+        });
+        $(".qrimg").hide();
+
+        setTimeout(function() { $(".loadingqr").hide(); $(".qrimg").show();}, 4000);
+
+$(".loading").hide();
+
+
+
+
+
+
+    });
+</script>
+
+
+<script >
+  
+  function submitDetailsForm() {
+
+    var security_level = $("#security_level").text()
+    var service_fee = $("#service_fee").text()
+
+    $("#security_level_input").val(security_level)
+    $("#service_fee_input").val(service_fee)
+     $("#addressform").submit();
+  }
+  
+  // $(".qrimg").hide();
+  // $("#loading").show().delay(0).fadeOut();
+
+  // setTimeout(function() { $(".loadingqr").hide(); $(".qrimg").show();}, 4000);
+
+  // $(".loading").hide();
+
+  var count = 0;
+
+  $(".add-address").click(function(){
+
+    count += 1;
+
+    setTimeout(function() { $(".add-address").hide(); $(".loading").show();}, 0);
+
+    setTimeout(function() {
+
+      $(".loading").hide(); $(".add-address").show();
+
+      if(count == 1) {
+        
+        $(".radiobtn").css("display","inline-block");
+        $(".form-main0").css("display","block");
+        $("#letter1").css("display","block");
+        $("#calc1").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","block");  
+
+      }
+
+      if(count == 2) {
+        $(".form-main1").css("display","block");
+        $("#letter2").css("display","block");
+        $("#calc2").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","block");
+
+      }
+
+      if(count == 3) {
+        $(".form-main2").css("display","block");
+        $("#letter3").css("display","block");
+        $("#calc3").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");
+        $("#qr3").css("display","block");
+
+      }
+
+      if(count == 4) {
+        $(".form-main3").css("display","block");
+        $("#letter4").css("display","block");
+        $("#calc4").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","block");
+
+      }
+
+      if(count == 5) {
+        $(".form-main4").css("display","block");
+        $("#letter5").css("display","block");
+        $("#calc5").css("display","block"); 
+        $("#qr0").css("display","none");  
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none"); 
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","block");
+    
+      }
+
+      if(count == 6) {
+        $(".form-main5").css("display","block");
+        $("#letter6").css("display","block");
+        $("#calc6").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","block");
+
+    
+      }
+
+      if(count == 7) {
+        $(".form-main6").css("display","block");
+        $("#letter7").css("display","block");
+        $("#calc7").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none"); 
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","block");
+     
+      }
+
+      if(count == 8) {
+        $(".form-main7").css("display","block");
+        $("#letter8").css("display","block");
+        $("#calc8").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","block");
+
+     
+      }
+
+      if(count == 9) {
+        $(".form-main8").css("display","block");
+        $("#letter9").css("display","block");
+        $("#calc9").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","block");
+  
+      }
+
+      if(count == 10) {
+        $(".form-main9").css("display","block");
+        $("#letter10").css("display","block");
+        $("#calc10").css("display","block");
+        $("#qr0").css("display","none");  
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","block");
+
+  
+      }
+
+      if(count == 11) {
+        $(".form-main10").css("display","block");
+        $("#letter11").css("display","block");
+        $("#calc11").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","block");     
+
+      }
+
+      if(count == 12) {
+        $(".form-main11").css("display","block");
+        $("#letter12").css("display","block");
+        $("#calc12").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","block");  
+
+
+      }
+
+      if(count == 13) {
+        $(".form-main12").css("display","block");
+        $("#letter13").css("display","block");
+        $("#calc13").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","block");   
+
+      }
+
+      if(count == 14) {
+        $(".form-main13").css("display","block");
+        $("#letter14").css("display","block");
+        $("#calc14").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","block"); 
+        
+
+
+      }
+
+      if(count == 15) {
+        $(".form-main14").css("display","block");
+        $("#letter15").css("display","block");
+        $("#calc15").css("display","block");  
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","block"); 
+    
+      }
+
+      if(count == 16) {
+        $(".form-main15").css("display","block");
+        $("#letter16").css("display","block");
+        $("#calc16").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","block"); 
+
+
+    
+      }
+
+      if(count == 17) {
+        $(".form-main16").css("display","block");
+        $("#letter17").css("display","block");
+        $("#calc17").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","block"); 
+
+
+     
+      }
+
+      if(count == 18) {
+        $(".form-main17").css("display","block");
+        $("#letter18").css("display","block");
+        $("#calc18").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","block"); 
+
+     
+      }
+
+      if(count == 19) {
+        $(".form-main18").css("display","block");
+        $("#letter19").css("display","block");
+        $("#calc19").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","block");
+
+  
+      }
+
+      if(count == 20) {
+        $(".form-main19").css("display","block");
+        $("#letter20").css("display","block");
+        $("#calc20").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","block");
+
+  
+      }
+
+      if(count == 21) {
+        $(".form-main20").css("display","block");
+        $("#letter21").css("display","block");
+        $("#calc21").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","block");
+
+
+  
+      }
+
+      if(count == 22) {
+        $(".form-main21").css("display","block");
+        $("#letter22").css("display","block");
+        $("#calc22").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","block");
+
+
+      }
+
+      if(count == 23) {
+        $(".form-main22").css("display","block");
+        $("#letter23").css("display","block");
+        $("#calc23").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","block");
+
+      }
+
+      if(count == 24) {
+        $(".form-main23").css("display","block");
+        $("#letter24").css("display","block");
+        $("#calc24").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","block");
+
+
+      }
+
+      if(count == 25) {
+        $(".form-main24").css("display","block");
+        $("#letter25").css("display","block");
+        $("#calc25").css("display","block"); 
+        $("#qr0").css("display","none");  
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","block");
+
+    
+      }
+
+      if(count == 26) {
+        $(".form-main25").css("display","block");
+        $("#letter26").css("display","block");
+        $("#calc26").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","block");
+
+
+    
+      }
+
+      if(count == 27) {
+        $(".form-main26").css("display","block");
+        $("#letter27").css("display","block");
+        $("#calc27").css("display","block"); 
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","block");
+
+
+     
+      }
+
+      if(count == 28) {
+        $(".form-main27").css("display","block");
+        $("#letter28").css("display","block");
+        $("#calc28").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","block");
+
+
+     
+      }
+
+      if(count == 29) {
+        $(".form-main28").css("display","block");
+        $("#letter29").css("display","block");
+        $("#calc29").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","block");
+
+
+     
+      }
+
+      if(count == 30) {
+        $(".form-main29").css("display","block");
+        $("#letter30").css("display","block");
+        $("#calc30").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","block");
+
+
+     
+      }
+
+      if(count == 31) {
+        $(".form-main30").css("display","block");
+        $("#letter31").css("display","block");
+        $("#calc31").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","block");
+
+     
+      }
+
+      if(count == 32) {
+        $(".form-main31").css("display","block");
+        $("#letter32").css("display","block");
+        $("#calc32").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","block");
+
+     
+      }
+
+      if(count == 33) {
+        $(".form-main32").css("display","block");
+        $("#letter33").css("display","block");
+        $("#calc33").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","block");
+     
+      }
+
+      if(count == 34) {
+        $(".form-main33").css("display","block");
+        $("#letter34").css("display","block");
+        $("#calc34").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","block");
+
+     
+      }
+
+      if(count == 35) {
+        $(".form-main34").css("display","block");
+        $("#letter35").css("display","block");
+        $("#calc35").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","block");
+
+     
+      }
+
+      if(count == 36) {
+        $(".form-main35").css("display","block");
+        $("#letter36").css("display","block");
+        $("#calc36").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","block");
+
+
+     
+      }
+
+
+      if(count == 37) {
+        $(".form-main36").css("display","block");
+        $("#letter37").css("display","block");
+        $("#calc37").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","block");
+
+
+      }
+
+      if(count == 38) {
+        $(".form-main37").css("display","block");
+        $("#letter38").css("display","block");
+        $("#calc38").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","block");
+
+
+
+      }
+
+      if(count == 39) {
+        $(".form-main38").css("display","block");
+        $("#letter39").css("display","block");
+        $("#calc39").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","block");
+
+
+
+      }
+
+      if(count == 40) {
+        $(".form-main39").css("display","block");
+        $("#letter40").css("display","block");
+        $("#calc40").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","block");
+
+
+
+      }
+
+      if(count == 41) {
+        $(".form-main40").css("display","block");
+        $("#letter41").css("display","block");
+        $("#calc41").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","block");
+
+
+      }
+
+
+      if(count == 42) {
+        $(".form-main41").css("display","block");
+        $("#letter42").css("display","block");
+        $("#calc42").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","block");
+
+
+      }
+
+      if(count == 43) {
+        $(".form-main42").css("display","block");
+        $("#letter43").css("display","block");
+        $("#calc43").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","block");
+
+
+      }
+      
+      if(count == 44) {
+        $(".form-main43").css("display","block");
+        $("#letter44").css("display","block");
+        $("#calc44").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","none");
+        $("#qr44").css("display","block");
+
+
+      }
+
+      if(count == 45) {
+        $(".form-main44").css("display","block");
+        $("#letter45").css("display","block");
+        $("#calc45").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","none");
+        $("#qr44").css("display","none");
+        $("#qr45").css("display","block");
+
+
+
+      }
+
+      if(count == 46) {
+        $(".form-main45").css("display","block");
+        $("#letter46").css("display","block");
+        $("#calc46").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","none");
+        $("#qr44").css("display","none");
+        $("#qr45").css("display","none");
+        $("#qr46").css("display","block");
+
+
+      }
+
+      if(count == 47) {
+        $(".form-main46").css("display","block");
+        $("#letter47").css("display","block");
+        $("#calc47").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","none");
+        $("#qr44").css("display","none");
+        $("#qr45").css("display","none");
+        $("#qr46").css("display","none");
+        $("#qr47").css("display","block");
+
+      }
+
+      if(count == 48) {
+        $(".form-main47").css("display","block");
+        $("#letter48").css("display","block");
+        $("#calc48").css("display","block");
+        $("#qr0").css("display","none"); 
+        $("#qr1").css("display","none");
+        $("#qr2").css("display","none");   
+        $("#qr3").css("display","none");
+        $("#qr4").css("display","none");
+        $("#qr5").css("display","none");
+        $("#qr6").css("display","none");
+        $("#qr7").css("display","none");
+        $("#qr8").css("display","none");
+        $("#qr9").css("display","none");
+        $("#qr10").css("display","none");     
+        $("#qr11").css("display","none");     
+        $("#qr12").css("display","none"); 
+        $("#qr13").css("display","none");   
+        $("#qr14").css("display","none"); 
+        $("#qr15").css("display","none"); 
+        $("#qr16").css("display","none"); 
+        $("#qr17").css("display","none"); 
+        $("#qr18").css("display","none"); 
+        $("#qr19").css("display","none");
+        $("#qr20").css("display","none");
+        $("#qr21").css("display","none");
+        $("#qr22").css("display","none");
+        $("#qr23").css("display","none");
+        $("#qr24").css("display","none");
+        $("#qr25").css("display","none");
+        $("#qr26").css("display","none");
+        $("#qr27").css("display","none");
+        $("#qr28").css("display","none");
+        $("#qr29").css("display","none");
+        $("#qr30").css("display","none");
+        $("#qr31").css("display","none");
+        $("#qr32").css("display","none");
+        $("#qr33").css("display","none");
+        $("#qr34").css("display","none");
+        $("#qr35").css("display","none");
+        $("#qr36").css("display","none");
+        $("#qr37").css("display","none");
+        $("#qr38").css("display","none");
+        $("#qr39").css("display","none");
+        $("#qr40").css("display","none");
+        $("#qr41").css("display","none");
+        $("#qr42").css("display","none");
+        $("#qr43").css("display","none");
+        $("#qr44").css("display","none");
+        $("#qr45").css("display","none");
+        $("#qr46").css("display","none");
+        $("#qr47").css("display","none");
+        $("#qr48").css("display","block");
+
+      }
+      
+      
+
+
+      setTimeout(function() { $(".qrimg").hide(); $(".loadingqr").show();}, 0);
+      setTimeout(function() { $(".loadingqr").hide(); $(".qrimg").show();}, 4000);
+
+
+
+
+      }, 1000);
+   
+  });
+
+
+
+
+  $("#c0, #c1, #c2, #c3, #c4, #c5, #c6, #c8, #c9, #c10, #c11, #c12, #c13, #c14, #c15, #c16, #c17, #c18, #c19, #c20",).on("paste keyup", function() {
+    
+    var c0 = $("#c0").val();
+    var c1 = $("#c1").val();
+    var c2 = $("#c2").val();
+    var c3 = $("#c3").val();
+    var c4 = $("#c4").val();
+    var c5 = $("#c5").val();
+    var c6 = $("#c6").val();
+    var c7 = $("#c7").val();
+    var c8 = $("#c8").val();
+    var c9 = $("#c9").val();
+    var c10 = $("#c10").val();
+    var c11 = $("#c11").val();
+    var c12 = $("#c12").val();
+    var c13 = $("#c13").val();
+    var c14 = $("#c14").val();
+    var c15 = $("#c15").val();
+    var c16 = $("#c16").val();
+    var c17 = $("#c17").val();
+    var c18 = $("#c18").val();
+    var c19 = $("#c19").val();
+    var c20 = $("#c20").val();
+    var c21 = $("#c21").val();
+    var c22 = $("#c22").val();
+    var c23 = $("#c23").val();
+    var c24 = $("#c24").val();
+    var c25 = $("#c25").val();
+    var c26 = $("#c26").val();
+    var c27 = $("#c27").val();
+    var c28 = $("#c28").val();
+    var c29 = $("#c29").val();
+    var c30 = $("#c30").val();
+
+     if(!$("#c0").val()) {
+      c0 = 0;
+     }
+
+     if(!$("#c1").val()) {
+       c1 = 0;
+     }
+
+     if(!$("#c2").val()) {
+       c2 = 0;
+     }
+
+     if(!$("#c3").val()) {
+       c3 = 0;
+     }
+
+     if(!$("#c4").val()) {
+       c4 = 0;
+     }
+
+     if(!$("#c5").val()) {
+       c5 = 0;
+     }
+
+     if(!$("#c6").val()) {
+       c6 = 0;
+     }
+
+     if(!$("#c7").val()) {
+       c7 = 0;
+     }
+
+     if(!$("#c8").val()) {
+       c8 = 0;
+     }
+
+     if(!$("#c9").val()) {
+       c9 = 0;
+     }
+
+     if(!$("#c10").val()) {
+       c10 = 0;
+     }
+
+     if(!$("#c11").val()) {
+       c11 = 0;
+     }
+
+     if(!$("#c12").val()) {
+       c12 = 0;
+     }
+
+     if(!$("#c13").val()) {
+       c13 = 0;
+     }
+
+     if(!$("#c14").val()) {
+       c14 = 0;
+     }
+
+     if(!$("#c15").val()) {
+       c15 = 0;
+     }
+
+     if(!$("#c16").val()) {
+       c16 = 0;
+     }
+
+     if(!$("#c17").val()) {
+       c17 = 0;
+     }
+
+     if(!$("#c18").val()) {
+       c18 = 0;
+     }
+
+     if(!$("#c19").val()) {
+       c19 = 0;
+     }
+
+     if(!$("#c20").val()) {
+       c20 = 0;
+     }
+     if(!$("#c21").val()) {
+       c21 = 0;
+     }
+
+     if(!$("#c22").val()) {
+       c22 = 0;
+     }
+
+     if(!$("#c23").val()) {
+       c23 = 0;
+     }
+
+     if(!$("#c24").val()) {
+       c24 = 0;
+     }
+
+     if(!$("#c25").val()) {
+       c25 = 0;
+     }
+
+     if(!$("#c26").val()) {
+       c26 = 0;
+     }
+     if(!$("#c27").val()) {
+       c27 = 0;
+     }
+
+     if(!$("#c28").val()) {
+       c28 = 0;
+     }
+
+     if(!$("#c29").val()) {
+       c29 = 0;
+     }
+
+     if(!$("#c30").val()) {
+       c30 = 0;
+     }
+
+
+
+    var sum =  parseFloat(c0) + parseFloat(c1) + parseFloat(c2) + parseFloat(c3) + parseFloat(c4) + parseFloat(c5) + parseFloat(c6) + parseFloat(c7) + parseFloat(c8) + parseFloat(c9) + parseFloat(c10)
+    + parseFloat(c11) + parseFloat(c12) + parseFloat(c13) + parseFloat(c14) + parseFloat(c15) + parseFloat(c16) + parseFloat(c17) + parseFloat(c18) + parseFloat(c19) + parseFloat(c20)
+    + parseFloat(c21) + parseFloat(c22) + parseFloat(c23) + parseFloat(c24) + parseFloat(c25) + parseFloat(c26) + parseFloat(c27) + parseFloat(c28) + parseFloat(c29) + parseFloat(c30);
+
+    var fee = parseFloat($("#fee").text());
+    
+
+    result = sum -(sum * fee)/100 - 0.0005
+
+    $("#result").val(result.toFixed(7));
+
+
+
+  });
+
+
+
+
+  // $(".add-address")
+
+</script>
+  
+</body>
